@@ -4,62 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstPIC</title>
-    <style>
-        body{
-            font-family: sans-serif;
-            color: #023047;
-            background-color: #727070;
-            margin:0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header{
-            background-color: #219edc;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main{
-            display: flex;
-            flex: 1;
-            padding: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        .login-box{
-            background-color:  #fff;
-            padding:40px;
-            border-radius: 10px;
-            box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
-        }
-        .login-box h2{
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .login-box input{
-            background-color: #fff;
-            border: 2px solid #219ebc;
-            color: #023047;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            width: 100%;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        .login-box input:focus{
-            border-color: #fb8500;
-            outline:none;
-        }
-
-        .login-box a{
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body >
     <header>
@@ -70,15 +16,20 @@
                 <h2>Iniciar Sesión</h2>
                 <input type="text" placeholder="Nombre de usuario"/>
                 <input type="password" placeholder="Contraseña""/>
-                <a href="home.html"> Ingresar</a>  <a href="sign-up.html">Registrarse</a>
-        
+                <a href="home.html" class="primary"> Ingresar</a> 
+                <a href="sign-up.html" class="secondary">Registrarse</a>
             </div>
     </main>
     <aside >
 
     </aside>
     <footer>
-        &copy; Derechos Reservados - Información reservada
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <p>&copy; 2024 InstaPIC Company</p>
     </footer>
 </body>
 </html>
