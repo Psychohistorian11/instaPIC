@@ -18,12 +18,21 @@
             <input type="password" placeholder="Contraseña"/>
             <input type="password" placeholder="Reescribir la constraseña"/>
 
-            <a href="home.html" class="primary">Ingresar</a>
+            <a onclick="registry()" class="primary">Ingresar</a>
             <a href="#" class="secondary">Olvidé mi contraseña</a>
         </div>
     </main>
     <footer>
         &copy; Derechos Reservados - Información reservada
     </footer>
+
+    <script>
+        function registry (){
+         var username = document.getElementById('username').value;
+         var password = document.getElementById('password').value;
+ 
+         let storedPassword = localStorage.setItem(username, password);
+        }
+     </script>
 </body>
 </html>

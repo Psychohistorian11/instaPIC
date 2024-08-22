@@ -14,9 +14,9 @@
     <main>
             <div class="login-box">
                 <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="Nombre de usuario"/>
-                <input type="password" placeholder="Contraseña""/>
-                <a href="home.html" class="primary"> Ingresar</a> 
+                <input type="text" id="username"placeholder="Nombre de usuario"/>
+                <input type="password" id="password" placeholder="Contraseña""/>
+                <a onclick="login()" class="primary"> Ingresar</a> 
                 <a href="sign-up.html" class="secondary">Registrarse</a>
             </div>
     </main>
@@ -31,5 +31,19 @@
         </ul>
         <p>&copy; 2024 InstaPIC Company</p>
     </footer>
+
+    <script>
+       function login(){
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        let storedPassword = localStorage.getItem(username);
+        if(storedPassword != null &&storedPassword===password) {
+            alert("Bien")
+        }else{
+            alert("Ingreso no valido")
+        }
+       }
+    </script>
 </body>
 </html>
